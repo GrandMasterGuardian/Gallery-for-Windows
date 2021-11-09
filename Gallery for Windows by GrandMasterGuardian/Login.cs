@@ -191,6 +191,7 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
         private void Options_Click(object sender, EventArgs e)
         {
             OptShowUsers.Visible = !OptShowUsers.Visible;
+            OptShowNextForm.Visible = !OptShowNextForm.Visible;
         }
 
         private void OptShowUsers_Click(object sender, EventArgs e)
@@ -198,6 +199,7 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             LoginPanel.Visible = false;
             RegPanel.Visible = false;
             ShowUsPanel.Visible = true;
+            OptShowNextForm.Visible = false;
             for (int i = 0; i < persons.Count; i++)
             {
                 int n = i + 1;
@@ -263,6 +265,19 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
 
                 }
             }
+        }
+
+        private void OptShowNextForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
+
+        private void OptShowNextForm_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }

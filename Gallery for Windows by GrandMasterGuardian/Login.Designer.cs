@@ -49,6 +49,7 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             this.ShowUsPanel = new System.Windows.Forms.Panel();
             this.ShowUsBack = new System.Windows.Forms.Button();
             this.ShowUsLabel = new System.Windows.Forms.Label();
+            this.OptShowNextForm = new System.Windows.Forms.Button();
             this.LoginPanel.SuspendLayout();
             this.RegPanel.SuspendLayout();
             this.ShowUsPanel.SuspendLayout();
@@ -56,24 +57,27 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // 
             // LoginPanel
             // 
+            this.LoginPanel.BackColor = System.Drawing.Color.MistyRose;
             this.LoginPanel.Controls.Add(this.LoginPasswordWarn);
             this.LoginPanel.Controls.Add(this.LoginNameWarn);
             this.LoginPanel.Controls.Add(this.LoginName);
             this.LoginPanel.Controls.Add(this.LoginEnter);
             this.LoginPanel.Controls.Add(this.LoginPassword);
             this.LoginPanel.Controls.Add(this.LoginReg);
-            this.LoginPanel.Location = new System.Drawing.Point(160, 53);
+            this.LoginPanel.Location = new System.Drawing.Point(225, 0);
+            this.LoginPanel.Margin = new System.Windows.Forms.Padding(4);
             this.LoginPanel.Name = "LoginPanel";
-            this.LoginPanel.Size = new System.Drawing.Size(313, 222);
+            this.LoginPanel.Size = new System.Drawing.Size(392, 491);
             this.LoginPanel.TabIndex = 5;
             // 
             // LoginPasswordWarn
             // 
             this.LoginPasswordWarn.AutoSize = true;
             this.LoginPasswordWarn.Font = new System.Drawing.Font("Microsoft Himalaya", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginPasswordWarn.Location = new System.Drawing.Point(88, 120);
+            this.LoginPasswordWarn.Location = new System.Drawing.Point(117, 256);
+            this.LoginPasswordWarn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoginPasswordWarn.Name = "LoginPasswordWarn";
-            this.LoginPasswordWarn.Size = new System.Drawing.Size(81, 16);
+            this.LoginPasswordWarn.Size = new System.Drawing.Size(101, 20);
             this.LoginPasswordWarn.TabIndex = 9;
             this.LoginPasswordWarn.Text = "Invalid password";
             this.LoginPasswordWarn.Visible = false;
@@ -82,9 +86,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // 
             this.LoginNameWarn.AutoSize = true;
             this.LoginNameWarn.Font = new System.Drawing.Font("Microsoft Himalaya", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginNameWarn.Location = new System.Drawing.Point(88, 79);
+            this.LoginNameWarn.Location = new System.Drawing.Point(117, 203);
+            this.LoginNameWarn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LoginNameWarn.Name = "LoginNameWarn";
-            this.LoginNameWarn.Size = new System.Drawing.Size(63, 16);
+            this.LoginNameWarn.Size = new System.Drawing.Size(78, 20);
             this.LoginNameWarn.TabIndex = 8;
             this.LoginNameWarn.Text = "Invalid name";
             this.LoginNameWarn.Visible = false;
@@ -92,9 +97,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // LoginName
             // 
             this.LoginName.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginName.Location = new System.Drawing.Point(87, 54);
+            this.LoginName.Location = new System.Drawing.Point(116, 172);
+            this.LoginName.Margin = new System.Windows.Forms.Padding(4);
             this.LoginName.Name = "LoginName";
-            this.LoginName.Size = new System.Drawing.Size(131, 22);
+            this.LoginName.Size = new System.Drawing.Size(173, 25);
             this.LoginName.TabIndex = 2;
             this.LoginName.Text = "Name";
             this.LoginName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -104,9 +110,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // LoginEnter
             // 
             this.LoginEnter.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginEnter.Location = new System.Drawing.Point(39, 172);
+            this.LoginEnter.Location = new System.Drawing.Point(52, 361);
+            this.LoginEnter.Margin = new System.Windows.Forms.Padding(4);
             this.LoginEnter.Name = "LoginEnter";
-            this.LoginEnter.Size = new System.Drawing.Size(97, 30);
+            this.LoginEnter.Size = new System.Drawing.Size(129, 37);
             this.LoginEnter.TabIndex = 1;
             this.LoginEnter.Text = "Enter";
             this.LoginEnter.UseVisualStyleBackColor = true;
@@ -115,9 +122,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // LoginPassword
             // 
             this.LoginPassword.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginPassword.Location = new System.Drawing.Point(87, 95);
+            this.LoginPassword.Location = new System.Drawing.Point(116, 227);
+            this.LoginPassword.Margin = new System.Windows.Forms.Padding(4);
             this.LoginPassword.Name = "LoginPassword";
-            this.LoginPassword.Size = new System.Drawing.Size(131, 22);
+            this.LoginPassword.Size = new System.Drawing.Size(173, 25);
             this.LoginPassword.TabIndex = 3;
             this.LoginPassword.Text = "Password";
             this.LoginPassword.Enter += new System.EventHandler(this.LoginPassword_Enter);
@@ -126,10 +134,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // LoginReg
             // 
             this.LoginReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginReg.Location = new System.Drawing.Point(180, 171);
-            this.LoginReg.Margin = new System.Windows.Forms.Padding(2);
+            this.LoginReg.Location = new System.Drawing.Point(223, 361);
+            this.LoginReg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginReg.Name = "LoginReg";
-            this.LoginReg.Size = new System.Drawing.Size(95, 30);
+            this.LoginReg.Size = new System.Drawing.Size(127, 37);
             this.LoginReg.TabIndex = 0;
             this.LoginReg.Text = "Register";
             this.LoginReg.UseVisualStyleBackColor = true;
@@ -137,6 +145,7 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // 
             // RegPanel
             // 
+            this.RegPanel.BackColor = System.Drawing.Color.MistyRose;
             this.RegPanel.Controls.Add(this.RegPasswordWarn);
             this.RegPanel.Controls.Add(this.RegNameWarn);
             this.RegPanel.Controls.Add(this.RegRegister);
@@ -144,9 +153,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             this.RegPanel.Controls.Add(this.RegPassword);
             this.RegPanel.Controls.Add(this.RegName);
             this.RegPanel.Controls.Add(this.RegBack);
-            this.RegPanel.Location = new System.Drawing.Point(169, 12);
+            this.RegPanel.Location = new System.Drawing.Point(225, 0);
+            this.RegPanel.Margin = new System.Windows.Forms.Padding(4);
             this.RegPanel.Name = "RegPanel";
-            this.RegPanel.Size = new System.Drawing.Size(294, 304);
+            this.RegPanel.Size = new System.Drawing.Size(392, 487);
             this.RegPanel.TabIndex = 7;
             this.RegPanel.Visible = false;
             this.RegPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.RegPanel_Paint);
@@ -155,9 +165,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // 
             this.RegPasswordWarn.AutoSize = true;
             this.RegPasswordWarn.Font = new System.Drawing.Font("Microsoft Himalaya", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegPasswordWarn.Location = new System.Drawing.Point(79, 117);
+            this.RegPasswordWarn.Location = new System.Drawing.Point(108, 245);
+            this.RegPasswordWarn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RegPasswordWarn.Name = "RegPasswordWarn";
-            this.RegPasswordWarn.Size = new System.Drawing.Size(0, 16);
+            this.RegPasswordWarn.Size = new System.Drawing.Size(0, 20);
             this.RegPasswordWarn.TabIndex = 8;
             this.RegPasswordWarn.Visible = false;
             this.RegPasswordWarn.Click += new System.EventHandler(this.RegPasswordWarn_Click);
@@ -166,18 +177,20 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // 
             this.RegNameWarn.AutoSize = true;
             this.RegNameWarn.Font = new System.Drawing.Font("Microsoft Himalaya", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegNameWarn.Location = new System.Drawing.Point(78, 76);
+            this.RegNameWarn.Location = new System.Drawing.Point(108, 192);
+            this.RegNameWarn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RegNameWarn.Name = "RegNameWarn";
-            this.RegNameWarn.Size = new System.Drawing.Size(0, 16);
+            this.RegNameWarn.Size = new System.Drawing.Size(0, 20);
             this.RegNameWarn.TabIndex = 7;
             this.RegNameWarn.Visible = false;
             // 
             // RegRegister
             // 
             this.RegRegister.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegRegister.Location = new System.Drawing.Point(162, 253);
+            this.RegRegister.Location = new System.Drawing.Point(240, 385);
+            this.RegRegister.Margin = new System.Windows.Forms.Padding(4);
             this.RegRegister.Name = "RegRegister";
-            this.RegRegister.Size = new System.Drawing.Size(83, 23);
+            this.RegRegister.Size = new System.Drawing.Size(111, 28);
             this.RegRegister.TabIndex = 6;
             this.RegRegister.Text = "Register";
             this.RegRegister.UseVisualStyleBackColor = true;
@@ -186,9 +199,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // RegConfPassword
             // 
             this.RegConfPassword.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegConfPassword.Location = new System.Drawing.Point(79, 134);
+            this.RegConfPassword.Location = new System.Drawing.Point(105, 269);
+            this.RegConfPassword.Margin = new System.Windows.Forms.Padding(4);
             this.RegConfPassword.Name = "RegConfPassword";
-            this.RegConfPassword.Size = new System.Drawing.Size(131, 22);
+            this.RegConfPassword.Size = new System.Drawing.Size(173, 25);
             this.RegConfPassword.TabIndex = 5;
             this.RegConfPassword.Text = "Confirm password";
             this.RegConfPassword.Enter += new System.EventHandler(this.RegConfPassword_Enter);
@@ -197,9 +211,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // RegPassword
             // 
             this.RegPassword.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegPassword.Location = new System.Drawing.Point(79, 93);
+            this.RegPassword.Location = new System.Drawing.Point(105, 216);
+            this.RegPassword.Margin = new System.Windows.Forms.Padding(4);
             this.RegPassword.Name = "RegPassword";
-            this.RegPassword.Size = new System.Drawing.Size(131, 22);
+            this.RegPassword.Size = new System.Drawing.Size(173, 25);
             this.RegPassword.TabIndex = 4;
             this.RegPassword.Text = "Password";
             this.RegPassword.Enter += new System.EventHandler(this.RegPassword_Enter);
@@ -208,9 +223,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // RegName
             // 
             this.RegName.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegName.Location = new System.Drawing.Point(79, 53);
+            this.RegName.Location = new System.Drawing.Point(105, 159);
+            this.RegName.Margin = new System.Windows.Forms.Padding(4);
             this.RegName.Name = "RegName";
-            this.RegName.Size = new System.Drawing.Size(131, 22);
+            this.RegName.Size = new System.Drawing.Size(173, 25);
             this.RegName.TabIndex = 3;
             this.RegName.Text = "Name";
             this.RegName.Click += new System.EventHandler(this.RegName_Click);
@@ -221,9 +237,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // RegBack
             // 
             this.RegBack.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegBack.Location = new System.Drawing.Point(31, 253);
+            this.RegBack.Location = new System.Drawing.Point(52, 385);
+            this.RegBack.Margin = new System.Windows.Forms.Padding(4);
             this.RegBack.Name = "RegBack";
-            this.RegBack.Size = new System.Drawing.Size(75, 23);
+            this.RegBack.Size = new System.Drawing.Size(100, 28);
             this.RegBack.TabIndex = 0;
             this.RegBack.Text = "Back";
             this.RegBack.UseVisualStyleBackColor = true;
@@ -232,9 +249,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // Options
             // 
             this.Options.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Options.Location = new System.Drawing.Point(574, 356);
+            this.Options.Location = new System.Drawing.Point(765, 438);
+            this.Options.Margin = new System.Windows.Forms.Padding(4);
             this.Options.Name = "Options";
-            this.Options.Size = new System.Drawing.Size(27, 23);
+            this.Options.Size = new System.Drawing.Size(36, 28);
             this.Options.TabIndex = 8;
             this.Options.Text = "...";
             this.Options.UseVisualStyleBackColor = true;
@@ -243,9 +261,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // OptShowUsers
             // 
             this.OptShowUsers.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OptShowUsers.Location = new System.Drawing.Point(485, 356);
+            this.OptShowUsers.Location = new System.Drawing.Point(647, 438);
+            this.OptShowUsers.Margin = new System.Windows.Forms.Padding(4);
             this.OptShowUsers.Name = "OptShowUsers";
-            this.OptShowUsers.Size = new System.Drawing.Size(83, 23);
+            this.OptShowUsers.Size = new System.Drawing.Size(111, 28);
             this.OptShowUsers.TabIndex = 9;
             this.OptShowUsers.Text = "Show users";
             this.OptShowUsers.UseVisualStyleBackColor = true;
@@ -254,21 +273,23 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // 
             // ShowUsPanel
             // 
-            this.ShowUsPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ShowUsPanel.BackColor = System.Drawing.Color.MistyRose;
             this.ShowUsPanel.Controls.Add(this.ShowUsBack);
             this.ShowUsPanel.Controls.Add(this.ShowUsLabel);
-            this.ShowUsPanel.Location = new System.Drawing.Point(1, -1);
+            this.ShowUsPanel.Location = new System.Drawing.Point(0, 0);
+            this.ShowUsPanel.Margin = new System.Windows.Forms.Padding(4);
             this.ShowUsPanel.Name = "ShowUsPanel";
-            this.ShowUsPanel.Size = new System.Drawing.Size(613, 399);
+            this.ShowUsPanel.Size = new System.Drawing.Size(817, 491);
             this.ShowUsPanel.TabIndex = 10;
             this.ShowUsPanel.Visible = false;
             // 
             // ShowUsBack
             // 
             this.ShowUsBack.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowUsBack.Location = new System.Drawing.Point(525, 361);
+            this.ShowUsBack.Location = new System.Drawing.Point(700, 444);
+            this.ShowUsBack.Margin = new System.Windows.Forms.Padding(4);
             this.ShowUsBack.Name = "ShowUsBack";
-            this.ShowUsBack.Size = new System.Drawing.Size(75, 23);
+            this.ShowUsBack.Size = new System.Drawing.Size(100, 28);
             this.ShowUsBack.TabIndex = 1;
             this.ShowUsBack.Text = "Back";
             this.ShowUsBack.UseVisualStyleBackColor = true;
@@ -277,22 +298,38 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             // ShowUsLabel
             // 
             this.ShowUsLabel.AutoSize = true;
-            this.ShowUsLabel.Location = new System.Drawing.Point(22, 13);
+            this.ShowUsLabel.Location = new System.Drawing.Point(29, 16);
+            this.ShowUsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ShowUsLabel.Name = "ShowUsLabel";
-            this.ShowUsLabel.Size = new System.Drawing.Size(40, 13);
+            this.ShowUsLabel.Size = new System.Drawing.Size(53, 17);
             this.ShowUsLabel.TabIndex = 0;
             this.ShowUsLabel.Text = "Users: \r\n";
             // 
+            // OptShowNextForm
+            // 
+            this.OptShowNextForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OptShowNextForm.Location = new System.Drawing.Point(647, 403);
+            this.OptShowNextForm.Name = "OptShowNextForm";
+            this.OptShowNextForm.Size = new System.Drawing.Size(111, 28);
+            this.OptShowNextForm.TabIndex = 11;
+            this.OptShowNextForm.Text = "Next form";
+            this.OptShowNextForm.UseVisualStyleBackColor = true;
+            this.OptShowNextForm.Visible = false;
+            this.OptShowNextForm.Click += new System.EventHandler(this.OptShowNextForm_Click_1);
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 395);
-            this.Controls.Add(this.LoginPanel);
-            this.Controls.Add(this.RegPanel);
+            this.BackColor = System.Drawing.Color.MistyRose;
+            this.ClientSize = new System.Drawing.Size(817, 486);
+            this.Controls.Add(this.OptShowNextForm);
             this.Controls.Add(this.OptShowUsers);
             this.Controls.Add(this.Options);
+            this.Controls.Add(this.RegPanel);
             this.Controls.Add(this.ShowUsPanel);
+            this.Controls.Add(this.LoginPanel);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -328,6 +365,7 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
         private System.Windows.Forms.Label RegPasswordWarn;
         private System.Windows.Forms.Label LoginPasswordWarn;
         private System.Windows.Forms.Label LoginNameWarn;
+        private System.Windows.Forms.Button OptShowNextForm;
     }
 }
 
