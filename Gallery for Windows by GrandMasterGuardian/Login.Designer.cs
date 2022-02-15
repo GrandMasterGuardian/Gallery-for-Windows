@@ -330,6 +330,7 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             this.Controls.Add(this.ShowUsPanel);
             this.Controls.Add(this.LoginPanel);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Login";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

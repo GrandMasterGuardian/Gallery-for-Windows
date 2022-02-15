@@ -16,5 +16,10 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

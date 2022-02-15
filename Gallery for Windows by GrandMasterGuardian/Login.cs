@@ -159,7 +159,7 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
 
         private void button4_Click(object sender, EventArgs e)
         {
-            User u1 = new User(RegName.Text, RegPassword.Text);
+            Person u1 = new Person(RegName.Text, RegPassword.Text, false);
             persons.Add(u1);
         }
 
@@ -183,7 +183,7 @@ namespace Gallery_for_Windows_by_GrandMasterGuardian
             }
             if (RegPasswordIsSuitable == true && RegNameIsSuitable == true)
             {
-                User u1 = new User(RegName.Text, RegPassword.Text);
+                Person u1 = new Person(RegName.Text, RegPassword.Text, false);
                 persons.Add(u1);
             }
         }
